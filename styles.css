@@ -355,7 +355,7 @@ body.cursor-hover #cursor-ring {
 
 #hero h1 {
   font-family: var(--font-serif);
-  font-size: clamp(5rem, 15vw, 13rem);
+  font-size: clamp(3.5rem, 10vw, 8.5rem);
   line-height: 0.92;
   font-weight: 400;
   letter-spacing: -0.02em;
