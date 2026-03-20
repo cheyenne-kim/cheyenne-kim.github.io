@@ -716,16 +716,15 @@ section {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2.5rem;
-  padding: 3rem 0;
+  padding: 3rem 0 3rem 2rem;
   border-bottom: 1px solid var(--border);
   position: relative;
-  transition: padding-left 0.3s;
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -var(--gutter);
+  left: 0;
   top: 0; bottom: 0;
   width: 2px;
   background: var(--gold);
