@@ -31,16 +31,30 @@
 
   <!-- Hero -->
   <section id="hero">
-    <div class="hero-frame">
-      <span></span><span></span><span></span><span></span>
-    </div>
     <div class="hero-content">
-      <p class="hero-film-credit">A Film By</p>
-      <h1>
-        <span class="scramble" data-value="Cheyenne">Cheyenne</span><em><span class="scramble" data-value="Kim">Kim</span></em>
-      </h1>
-      <p class="hero-credit">Written &amp; Directed By</p>
-      <p class="hero-tagline">Engineer by training, creative by nature.</p>
+      <div class="hero-text">
+        <p class="hero-film-credit">A Film By</p>
+        <h1>
+          <span class="scramble" data-value="Cheyenne">Cheyenne</span><em><span class="scramble" data-value="Kim">Kim</span></em>
+        </h1>
+        <p class="hero-descriptor">Data Scientist &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; Filmmaker &nbsp;·&nbsp; Photographer</p>
+        <div class="hero-meta">
+          <span>Previously @ Goldman Sachs</span>
+          <span class="hero-meta-dot">·</span>
+          <span>Currently @ Centene</span>
+          <span class="hero-meta-dot">·</span>
+          <span>Duke University</span>
+          <span class="hero-meta-dot">·</span>
+          <span>University of Pennsylvania</span>
+        </div>
+        <div class="hero-cta">
+          <a href="work.html" class="btn">Work Experience</a>
+          <a href="portfolio.html" class="hero-cta-ghost">Creative Portfolio →</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="hero.jpg" alt="Cheyenne Kim" />
+      </div>
     </div>
     <a href="#about" class="scroll-hint" aria-label="Scroll down">
       <span></span>
@@ -82,13 +96,7 @@
       <div class="section-header">
         <span class="section-num">01</span>
         <h2>About</h2>
-      </div>
 
-      <!-- Big bold intro -->
-      <div class="about-hero-text">
-        <h3 class="about-big-line">Engineer.</h3>
-        <h3 class="about-big-line indent"><em>Filmmaker.</em></h3>
-        <h3 class="about-big-line">Storyteller.</h3>
       </div>
 
       <!-- Stats -->
@@ -159,6 +167,46 @@
         </div>
       </div>
 
+      <!-- Skills -->
+      <div class="skills-panels">
+
+        <div class="skills-panel">
+          <p class="skills-panel-label">Technical</p>
+          <div class="skills-tags">
+            <span class="skill primary">Python</span>
+            <span class="skill primary">Java</span>
+            <span class="skill primary">SQL</span>
+            <span class="skill primary">Machine Learning</span>
+            <span class="skill primary">Angular</span>
+            <span class="skill primary">TypeScript</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Spring</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">R</span>
+            <span class="skill">Tableau</span>
+            <span class="skill">DAX</span>
+            <span class="skill">ServiceNow</span>
+            <span class="skill">Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skills-divider"></div>
+
+        <div class="skills-panel">
+          <p class="skills-panel-label">Creative</p>
+          <div class="skills-tags">
+            <span class="skill primary">Adobe Premiere</span>
+            <span class="skill primary">Videography</span>
+            <span class="skill primary">16mm Film</span>
+            <span class="skill">Lightroom</span>
+            <span class="skill">Photoshop</span>
+            <span class="skill">Graphic Design</span>
+          </div>
+        </div>
+
+      </div>
+
       <!-- Meta row -->
       <div class="about-meta-row">
         <div class="about-meta-item">
@@ -175,6 +223,65 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Selected Work -->
+  <section id="selected-work">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Selected Work</h2>
+      </div>
+
+      <div class="selected-grid">
+
+        <div class="selected-card selected-card--wide">
+          <div class="selected-card-top">
+            <span class="selected-num">01</span>
+            <span class="selected-type selected-type--film">Film</span>
+          </div>
+          <h3 class="selected-title">interlude, an experimental film</h3>
+          <p class="selected-context">Duke University · 2021</p>
+          <p class="selected-desc">An experimental film exploring the human experience through the five senses. Written, directed, shot, and edited entirely by Cheyenne — winner of Best Cinematography at the Duke Film Festival.</p>
+          <div class="selected-footer">
+            <ul class="selected-roles"><li>Writer</li><li>Director</li><li>Cinematographer</li><li>Editor</li></ul>
+            <span class="selected-stat">&#127942; Best Cinematography</span>
+          </div>
+        </div>
+
+        <div class="selected-card">
+          <div class="selected-card-top">
+            <span class="selected-num">02</span>
+            <span class="selected-type selected-type--eng">Engineering</span>
+          </div>
+          <h3 class="selected-title">Alternative Assets Monitoring Platform</h3>
+          <p class="selected-context">Goldman Sachs · Asset Management · 2022–2024</p>
+          <p class="selected-desc">Built a financial flagging application tracking hedge funds and private equity firms across Goldman's alternative assets portfolio. Automatically detected compliance violations including AUM drops, headcount changes, and other risk indicators.</p>
+          <ul class="selected-tech"><li>Java</li><li>Spring</li><li>JavaScript</li><li>Angular</li></ul>
+          <div class="selected-footer">
+            <ul class="selected-roles"><li>Full-Stack Engineer</li></ul>
+            <span class="selected-stat">$445B+ monitored</span>
+          </div>
+        </div>
+
+        <div class="selected-card">
+          <div class="selected-card-top">
+            <span class="selected-num">03</span>
+            <span class="selected-type selected-type--eng">Data & Analytics</span>
+          </div>
+          <h3 class="selected-title">Enterprise ServiceNow Dashboard</h3>
+          <p class="selected-context">Centene Corporation · 2025–Present</p>
+          <p class="selected-desc">Developed an interactive data dashboard tracking ServiceNow pipeline data, design intake timelines, and SLA adherence. Used daily across the entire Enterprise Architecture and Business Solutions teams.</p>
+          <ul class="selected-tech"><li>Python</li><li>Power BI</li><li>SQL</li><li>ServiceNow</li></ul>
+          <div class="selected-footer">
+            <ul class="selected-roles"><li>Business Systems Analyst</li></ul>
+            <span class="selected-stat">2 enterprise teams</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
