@@ -21,7 +21,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-// Fade-in on scroll — skip elements inside tab panels (handled above)
+// Fade-in on scroll
 const observer = new IntersectionObserver(
   entries => entries.forEach(e => {
     if (e.isIntersecting) {
@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(
       observer.unobserve(e.target);
     }
   }),
-  { threshold: 0.08 }
+  { threshold: 0, rootMargin: '0px 0px -60px 0px' }
 );
 
 document.querySelectorAll(
