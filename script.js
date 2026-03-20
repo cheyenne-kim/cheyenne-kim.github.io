@@ -13,11 +13,15 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
 
     btn.classList.add('active');
-    document.getElementById(`tab-${target}`).classList.add('active');
+    const panel = document.getElementById(`tab-${target}`);
+    panel.classList.add('active');
+
+    // Reveal any fade-in elements that were hidden inside the tab
+    panel.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
   });
 });
 
-// Fade-in on scroll
+// Fade-in on scroll — skip elements inside tab panels (handled above)
 const observer = new IntersectionObserver(
   entries => entries.forEach(e => {
     if (e.isIntersecting) {
@@ -25,11 +29,11 @@ const observer = new IntersectionObserver(
       observer.unobserve(e.target);
     }
   }),
-  { threshold: 0.12 }
+  { threshold: 0.08 }
 );
 
 document.querySelectorAll(
-  '.section-header, .timeline-item, .video-item, .photo-item, .contact-blurb, .contact-links, .resume-cta'
+  '.section-header, .timeline-item, .contact-blurb, .contact-links, .resume-cta, .about-intro, .about-stats, .about-layout, .overview-card'
 ).forEach((el, i) => {
   el.classList.add('fade-in');
   el.style.transitionDelay = `${(i % 4) * 80}ms`;
