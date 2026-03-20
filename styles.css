@@ -426,23 +426,6 @@ body.cursor-hover #cursor-ring {
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-@media (max-width: 800px) {
-  .hero-content { grid-template-columns: 1fr; }
-  .hero-image-wrap {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.2;
-  }
-  .hero-image-wrap::before { display: none; }
-  .hero-text {
-    position: relative;
-    z-index: 1;
-    padding: calc(var(--nav-h) + 2rem) var(--gutter) 6rem;
-    justify-content: center;
-  }
-}
 
 /* ============================================================
    PAGE HEADER (work.html / portfolio.html)
@@ -809,12 +792,6 @@ section {
   margin-bottom: -0.25rem;
 }
 
-@media (max-width: 700px) {
-  .edu-items { flex-direction: column; }
-  .edu-divider { width: 100%; height: 1px; margin: 1.5rem 0; }
-  .work-education { flex-direction: column; }
-  .work-edu-divider { width: 100%; height: 1px; }
-}
 
 .about-meta-row {
   display: grid;
@@ -846,12 +823,6 @@ section {
   line-height: 1.6;
 }
 
-@media (max-width: 700px) {
-  .about-panels { grid-template-columns: 1fr; }
-  .about-meta-row { grid-template-columns: 1fr; }
-  .about-meta-item { border-right: none; border-bottom: 1px solid var(--border); }
-  .about-meta-item:last-child { border-bottom: none; }
-}
 
 /* ============================================================
    SELECTED WORK
@@ -992,15 +963,6 @@ section {
   white-space: nowrap;
 }
 
-@media (max-width: 700px) {
-  .selected-grid { grid-template-columns: 1fr; }
-  .selected-card--wide {
-    grid-column: 1;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  .selected-card--wide .selected-desc { grid-column: 1; grid-row: auto; }
-}
 
 /* ============================================================
    SKILLS
@@ -1082,10 +1044,6 @@ section {
   border: 1px solid var(--border);
 }
 
-@media (max-width: 700px) {
-  .skills-panels { grid-template-columns: 1fr; gap: 2rem; }
-  .skills-divider { width: 100%; height: 1px; }
-}
 
 /* ============================================================
    OVERVIEW CARDS
@@ -1695,41 +1653,114 @@ footer {
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* ── Tablet ── */
 @media (max-width: 1000px) {
   .collections-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .selected-card--wide {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .selected-card--wide .selected-desc { grid-column: 1; grid-row: auto; }
+  .selected-card--wide .selected-footer { grid-column: 1; }
 }
 
+/* ── Large mobile ── */
 @media (max-width: 800px) {
+  /* Hero */
+  .hero-content { grid-template-columns: 1fr; }
+  .hero-image-wrap {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.25;
+  }
+  .hero-image-wrap::before { display: none; }
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    padding: calc(var(--nav-h) + 2rem) var(--gutter) 6rem;
+    justify-content: center;
+  }
+  .hero-descriptor { white-space: normal; }
+
+  /* About stats */
   .about-stats { grid-template-columns: repeat(2, 1fr); }
   .about-stat:nth-child(2) { border-right: none; }
   .about-stat:nth-child(1),
   .about-stat:nth-child(2) { border-bottom: 1px solid var(--border); }
+
+  /* Selected Work */
+  .selected-grid { grid-template-columns: 1fr; }
+  .selected-card--wide { grid-column: 1; }
+  .selected-card { padding: 2rem; }
+
+  /* Skills */
+  .skills-panels { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+  .skills-divider { width: 100%; height: 1px; }
+
+  /* Education */
+  .about-education { padding: 2rem; }
+  .edu-items { flex-direction: column; }
+  .edu-divider { width: 100%; height: 1px; margin: 1.5rem 0; }
+
+  /* Work page education */
+  .work-education { flex-direction: column; }
+  .work-edu-divider { width: 100%; height: 1px; }
+
+  /* Page header */
+  .page-header { min-height: 40vh; padding-bottom: 2.5rem; }
 }
 
+/* ── Mobile ── */
 @media (max-width: 700px) {
-  .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
-  .timeline-meta { flex-direction: row; gap: 1rem; }
+  /* Nav */
+  .nav-links { gap: 1.2rem; }
+  .nav-links a { font-size: 0.65rem; letter-spacing: 0.12em; }
+
+  /* Section padding */
+  section { padding: 3.5rem var(--gutter); }
+
+  /* Timeline */
+  .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; padding-left: 1rem; }
+  .timeline-meta { flex-direction: row; gap: 1rem; flex-wrap: wrap; }
+
+  /* Collections */
   .collections-grid { grid-template-columns: repeat(2, 1fr); }
-  .nav-links { gap: 1.5rem; }
+
+  /* Overview */
   .overview-grid { grid-template-columns: 1fr; gap: 0; }
-  .about-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .overview-card-inner { min-height: auto; padding: 2.5rem 2rem; }
+
+  /* About panels */
+  .about-panels { grid-template-columns: 1fr; }
+  .about-panel { padding: 2rem; }
+  .about-meta-row { grid-template-columns: 1fr; }
+  .about-meta-item { border-right: none; border-bottom: 1px solid var(--border); }
+  .about-meta-item:last-child { border-bottom: none; }
+
+  /* Contact */
   .contact-links { flex-direction: column; }
   .contact-links a { border-right: none; border-bottom: 1px solid var(--border); }
   .contact-links a:last-child { border-bottom: none; }
+
+  /* Gallery */
   .gallery-prev { left: 0.5rem; }
   .gallery-next { right: 0.5rem; }
+  .gallery-stage img { max-width: 95vw; max-height: 70vh; }
 }
 
-@media (max-width: 400px) {
-  .collections-grid { grid-template-columns: 1fr; }
-}
-
+/* ── Small mobile ── */
 @media (max-width: 500px) {
   .about-stats { grid-template-columns: 1fr; }
   .about-stat { border-right: none !important; border-bottom: 1px solid var(--border); }
   .about-stat:last-child { border-bottom: none; }
-  .about-intro::before,
-  .about-intro::after { display: none; }
+  .collections-grid { grid-template-columns: 1fr; }
+  .hero-cta { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  #hero h1 { font-size: clamp(2.8rem, 12vw, 5rem); }
+  .selected-card { padding: 1.5rem; }
 }
 
 /* ============================================================
