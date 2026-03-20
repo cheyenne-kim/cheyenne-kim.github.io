@@ -387,6 +387,46 @@ body.cursor-hover #cursor-ring {
   background: var(--border);
 }
 
+.hero-tagline {
+  margin-top: 2rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  color: var(--cream-dim);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+.hero-highlights {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.hero-highlights span {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  padding: 0.3rem 0.9rem;
+  opacity: 0;
+  animation: highlight-fade 0.4s ease forwards;
+}
+
+.hero-highlights span:nth-child(1) { animation-delay: 1.4s; }
+.hero-highlights span:nth-child(2) { animation-delay: 1.6s; }
+.hero-highlights span:nth-child(3) { animation-delay: 1.8s; }
+.hero-highlights span:nth-child(4) { animation-delay: 2.0s; }
+.hero-highlights span:nth-child(5) { animation-delay: 2.2s; }
+
+@keyframes highlight-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
 .scroll-hint {
   position: absolute;
   bottom: 2.5rem;
