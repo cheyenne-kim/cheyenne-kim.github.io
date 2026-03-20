@@ -340,7 +340,8 @@ body.cursor-hover #cursor-ring {
 .hero-meta {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
   font-size: 0.72rem;
   color: var(--cream-dim);
   opacity: 0.5;
@@ -352,7 +353,8 @@ body.cursor-hover #cursor-ring {
 .hero-cta {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
 }
 
 .btn--outline {
@@ -493,7 +495,7 @@ body.cursor-hover #cursor-ring {
    SHARED LAYOUT
    ============================================================ */
 section {
-  padding: clamp(5rem, 10vw, 9rem) var(--gutter);
+  padding: clamp(4rem, 8vw, 7rem) var(--gutter);
 }
 
 .container {
@@ -689,7 +691,7 @@ section {
 }
 
 .about-education > .about-panel-label {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 
 .edu-items {
@@ -699,7 +701,7 @@ section {
 
 .edu-item {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   flex: 1;
   align-items: flex-start;
 }
@@ -707,7 +709,7 @@ section {
 .edu-divider {
   width: 1px;
   background: var(--border);
-  margin: 0 3rem;
+  margin: 0 2rem;
   align-self: stretch;
 }
 
@@ -721,10 +723,10 @@ section {
 
 .edu-school {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--cream);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .edu-degree {
@@ -839,7 +841,7 @@ section {
 
 .selected-card {
   background: var(--bg-2);
-  padding: 3rem;
+  padding: 2.25rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -1123,7 +1125,7 @@ section {
 .overview-card:hover::after { transform: scaleY(1); }
 
 .overview-card-inner {
-  padding: 4rem 3rem;
+  padding: 3rem 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -1147,7 +1149,7 @@ section {
 
 .overview-card h3 {
   font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 400;
   position: relative;
   line-height: 1;
@@ -1684,14 +1686,16 @@ footer {
 /* ── Large mobile ── */
 @media (max-width: 800px) {
   /* Hero — image on top, text below */
-  #hero { height: auto; min-height: 100svh; }
+  #hero { height: auto; min-height: 100vh; min-height: 100svh; }
   .hero-content {
     grid-template-columns: 1fr;
+    grid-template-rows: 45vh 1fr;
     grid-template-rows: 45svh 1fr;
   }
   .hero-image-wrap {
     position: relative;
-    height: 100%;
+    height: 45vh;
+    height: 45svh;
     opacity: 1;
     order: -1;
   }
