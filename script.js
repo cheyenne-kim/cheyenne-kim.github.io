@@ -349,10 +349,25 @@ if (galModal) {
   document.getElementById('gallery-prev').addEventListener('click', galPrev);
   document.getElementById('gallery-next').addEventListener('click', galNext);
   document.querySelector('.gallery-backdrop').addEventListener('click', closeGallery);
+
+  // Keyboard navigation
   document.addEventListener('keydown', e => {
     if (!galModal.classList.contains('open')) return;
     if (e.key === 'Escape')      closeGallery();
     if (e.key === 'ArrowRight')  galNext();
     if (e.key === 'ArrowLeft')   galPrev();
   });
+
+  // Touch swipe navigation
+  let touchStartX = 0;
+  galModal.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  galModal.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) galNext();
+      else galPrev();
+    }
+  }, { passive: true });
 }
