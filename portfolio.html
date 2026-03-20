@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Cheyenne Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">CK</a>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="portfolio.html" class="nav-active">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page header -->
+  <header class="page-header">
+    <div class="container">
+      <p class="hero-label">— Creative</p>
+      <h1>Portfolio</h1>
+    </div>
+  </header>
+
+  <!-- Creative Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+
+      <div class="portfolio-tabs">
+        <button class="tab-btn active" data-tab="video">Videography</button>
+        <button class="tab-btn" data-tab="photo">Photography</button>
+      </div>
+
+      <!-- Videography -->
+      <!-- HOW TO ADD A VIDEO:
+           Get the video ID from the YouTube URL (after "watch?v=")
+           and add it to a new <div class="video-item"> block below. -->
+      <div class="tab-panel active" id="tab-video">
+        <div class="video-grid">
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/07CrqYUhn84" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title <span class="video-award">Best Cinematography — Duke Film Festival</span></p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/ngNk-hBwsmc" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/ybXO7-4nJBI" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/gjnXVUcVzZY" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/guutkqYjLNw" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/ERblYvdubqE" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/7ZLoJ5LNM68" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/mxG2AcK1g0o" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/wzByWOKEczM" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/G8I6JP6JH30" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">Video Title</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Photography -->
+      <!-- HOW TO ADD A PHOTO:
+           Download photos from Instagram and put them in a /photos folder,
+           then set src="photos/filename.jpg". Each <a href=""> can link
+           to the specific Instagram post. Copy a whole block to add more. -->
+      <div class="tab-panel" id="tab-photo">
+        <p class="photo-note">
+          Browse the full collection on
+          <a href="https://www.instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">Instagram →</a>
+        </p>
+        <div class="photo-grid">
+
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_1" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+1" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_2" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+2" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_3" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+3" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_4" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+4" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_5" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+5" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_6" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+6" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_7" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+7" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_8" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+8" alt="Photo description" loading="lazy" />
+          </a>
+          <a class="photo-item" href="https://www.instagram.com/p/POST_ID_9" target="_blank" rel="noopener">
+            <img src="https://placehold.co/600x600/1a1a1a/c9a66b?text=Photo+9" alt="Photo description" loading="lazy" />
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Cheyenne Kim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
