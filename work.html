@@ -11,6 +11,16 @@
 </head>
 <body>
 
+  <!-- Page loader -->
+  <div id="loader">
+    <span class="loader-logo">CK</span>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
   <div class="grain"></div>
 
   <nav id="nav">
@@ -29,7 +39,7 @@
     </div>
     <div class="page-header-content">
       <p class="hero-eyebrow">Professional</p>
-      <h1>Work<em>Experience</em></h1>
+      <h1><span class="scramble" data-value="Work">Work</span><em><span class="scramble" data-value="Experience">Experience</span></em></h1>
     </div>
   </header>
 
@@ -46,7 +56,7 @@
           </div>
           <div class="timeline-content">
             <h3>Business Systems Analyst II</h3>
-            <p class="timeline-company">Centene Corporation</p>
+            <p class="timeline-company"><span class="company-badge">CC</span>Centene Corporation</p>
             <p class="timeline-desc">Administered and optimized the ServiceNow design intake pipeline, building workflows and process automation to reduce manual overhead. Developed interactive Power BI dashboards with complex DAX measures to visualize team performance, track SLA adherence, and identify systemic bottlenecks.</p>
             <ul class="timeline-tags">
               <li>ServiceNow</li>
@@ -65,7 +75,7 @@
           </div>
           <div class="timeline-content">
             <h3>Full-Stack Engineering Analyst</h3>
-            <p class="timeline-company">Goldman Sachs</p>
+            <p class="timeline-company"><span class="company-badge">GS</span>Goldman Sachs</p>
             <p class="timeline-desc">Designed and maintained 25+ scalable applications monitoring $445bn+ in alternative assets within the Asset Management division. Built front-end solutions using Angular and TypeScript in an Agile Scrum structure, implemented ML anomaly detection models, and managed two summer interns through a fully deployed data visualization application.</p>
             <ul class="timeline-tags">
               <li>Angular</li>
@@ -85,7 +95,7 @@
           </div>
           <div class="timeline-content">
             <h3>Director of Production</h3>
-            <p class="timeline-company">Pitch Story Labs</p>
+            <p class="timeline-company"><span class="company-badge">PSL</span>Pitch Story Labs</p>
             <p class="timeline-desc">Led a team of 15 videographers and editors at the second highest-grossing student-run media agency in the U.S., generating $200,000+ in revenue over two years. Spearheaded a fundraising campaign raising $50,000+ in six weeks for Duke's independent newspaper, The Chronicle.</p>
             <ul class="timeline-tags">
               <li>Video Production</li>
@@ -102,7 +112,7 @@
           </div>
           <div class="timeline-content">
             <h3>Credit Risk Summer Analyst</h3>
-            <p class="timeline-company">Goldman Sachs</p>
+            <p class="timeline-company"><span class="company-badge">GS</span>Goldman Sachs</p>
             <p class="timeline-desc">Performed comprehensive credit data analysis to assign internal ratings to financial institutions. Developed a dynamic covenant tracking dashboard using SQL and Python, integrating real-time data feeds to monitor compliance and support proactive risk management.</p>
             <ul class="timeline-tags">
               <li>SQL</li>
@@ -120,7 +130,7 @@
           </div>
           <div class="timeline-content">
             <h3>Data Science Intern</h3>
-            <p class="timeline-company">Colgate-Palmolive</p>
+            <p class="timeline-company"><span class="company-badge">CP</span>Colgate-Palmolive</p>
             <p class="timeline-desc">Developed a supervised learning churn model in R with 89% accuracy, enhancing customer retention strategies. Created customer behavior forecasting models that enabled targeted campaigns reducing operational costs by $500,000.</p>
             <ul class="timeline-tags">
               <li>R</li>
@@ -137,7 +147,7 @@
           </div>
           <div class="timeline-content">
             <h3>Data Science Intern</h3>
-            <p class="timeline-company">Verizon</p>
+            <p class="timeline-company"><span class="company-badge">VZ</span>Verizon</p>
             <p class="timeline-desc">Analyzed a four-year dataset on 5G small cell deployments to identify financial bottlenecks, projecting a $250,000 reduction in annual operational costs. Implemented a KNN predictive model to forecast cost implications of various 5G configurations.</p>
             <ul class="timeline-tags">
               <li>Python</li>
@@ -155,7 +165,7 @@
           </div>
           <div class="timeline-content">
             <h3>Software Engineering Intern</h3>
-            <p class="timeline-company">Topia Technology</p>
+            <p class="timeline-company"><span class="company-badge">TT</span>Topia Technology</p>
             <p class="timeline-desc">Worked on the Enterprise Data Orchestration Product (SHERPA) team, designing and developing data routers, filters, transformers, and plexers for a proprietary data pipeline.</p>
             <ul class="timeline-tags">
               <li>Java</li>

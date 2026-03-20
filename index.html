@@ -11,6 +11,16 @@
 </head>
 <body>
 
+  <!-- Page loader -->
+  <div id="loader">
+    <span class="loader-logo">CK</span>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
   <div class="grain"></div>
 
   <nav id="nav">
@@ -29,13 +39,37 @@
     </div>
     <div class="hero-content">
       <p class="hero-eyebrow">Portfolio</p>
-      <h1>Cheyenne<em>Kim</em></h1>
+      <h1>
+        <span class="scramble" data-value="Cheyenne">Cheyenne</span><em><span class="scramble" data-value="Kim">Kim</span></em>
+      </h1>
       <p class="hero-credit">Data Scientist &amp; Filmmaker</p>
     </div>
     <a href="#about" class="scroll-hint" aria-label="Scroll down">
       <span></span>
     </a>
   </section>
+
+  <!-- Marquee -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Data Science</span><span class="marquee-dot">·</span>
+      <span>Filmmaking</span><span class="marquee-dot">·</span>
+      <span>Engineering</span><span class="marquee-dot">·</span>
+      <span>Photography</span><span class="marquee-dot">·</span>
+      <span>Machine Learning</span><span class="marquee-dot">·</span>
+      <span>Video Production</span><span class="marquee-dot">·</span>
+      <span>Data Visualization</span><span class="marquee-dot">·</span>
+      <span>Cinematography</span><span class="marquee-dot">·</span>
+      <span>Data Science</span><span class="marquee-dot">·</span>
+      <span>Filmmaking</span><span class="marquee-dot">·</span>
+      <span>Engineering</span><span class="marquee-dot">·</span>
+      <span>Photography</span><span class="marquee-dot">·</span>
+      <span>Machine Learning</span><span class="marquee-dot">·</span>
+      <span>Video Production</span><span class="marquee-dot">·</span>
+      <span>Data Visualization</span><span class="marquee-dot">·</span>
+      <span>Cinematography</span><span class="marquee-dot">·</span>
+    </div>
+  </div>
 
   <!-- About -->
   <section id="about">
@@ -50,7 +84,7 @@
 
       <div class="about-stats">
         <div class="about-stat">
-          <span class="about-stat-value">7+</span>
+          <span class="about-stat-value" data-count="7" data-suffix="+">7+</span>
           <span class="about-stat-label">Years of experience</span>
         </div>
         <div class="about-stat">
@@ -62,14 +96,13 @@
           <span class="about-stat-label">Duke Film Festival</span>
         </div>
         <div class="about-stat">
-          <span class="about-stat-value">2</span>
+          <span class="about-stat-value" data-count="2" data-suffix="">2</span>
           <span class="about-stat-label">Degrees — CS &amp; Cinematic Arts</span>
         </div>
       </div>
 
       <div class="about-layout">
         <div class="about-text">
-          <!-- Replace this with whatever you'd like to say about yourself -->
           <p>I studied Computer Science and Cinematic Arts at Duke University, then spent two years as a full-stack engineer at Goldman Sachs building applications that monitor alternative assets. I'm currently a Business Systems Analyst at Centene Corporation while finishing my Master's in Data Science at UPenn.</p>
           <p>Outside of work I direct and shoot video — from documentary to narrative — and photograph everything in between. I led production at Pitch Story Labs, one of the top student-run media agencies in the country, and won Best Cinematography at the Duke Film Festival.</p>
         </div>
@@ -127,17 +160,33 @@
       </div>
       <p class="contact-blurb">Open to new opportunities and creative collaborations.</p>
       <div class="contact-links">
-        <a href="mailto:00cheyennekim@gmail.com">00cheyennekim@gmail.com</a>
-        <a href="https://linkedin.com/in/cheyenne-kim-069908174" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/cheyenne-kim" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.instagram.com/cykimfilm" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.youtube.com/@cheyennekim" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:00cheyennekim@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          Email
+        </a>
+        <a href="https://linkedin.com/in/cheyenne-kim-069908174" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/cheyenne-kim" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.instagram.com/cykimfilm" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/@cheyennekim" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16.2 2.8 12 2.8 12 2.8s-4.2 0-6.8.1c-.6.1-1.9.1-3 1.3C1.3 5 1 7 1 7S.7 9.2.7 11.5v2.1C.7 16 1 18 1 18s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C7.6 22.2 12 22.2 12 22.2s4.2 0 6.8-.2c.6-.1 1.9-.1 3-1.3.9-.8 1.2-2.8 1.2-2.8s.3-2.2.3-4.4v-2.1C23.3 9.2 23 7 23 7zm-13.5 7.5V9l6 2.8-6 2.7z"/></svg>
+          YouTube
+        </a>
       </div>
     </div>
   </section>
 
   <footer>
     <p>© 2026 Cheyenne Kim</p>
+    <p>Gig Harbor, WA</p>
   </footer>
 
   <script src="script.js"></script>
