@@ -367,6 +367,15 @@ body.cursor-hover #cursor-ring {
   display: block;
 }
 
+.hero-film-credit {
+  font-size: 0.6rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
+}
+
 .hero-credit {
   margin-top: 2.5rem;
   font-size: 0.65rem;
@@ -500,6 +509,15 @@ body.cursor-hover #cursor-ring {
   display: block;
 }
 
+.page-header-sub {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+
 /* ============================================================
    SHARED LAYOUT
    ============================================================ */
@@ -518,6 +536,20 @@ section {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.section-stage {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  opacity: 0.6;
+  align-self: flex-end;
+  margin-left: auto;
+  padding-bottom: 0.2rem;
 }
 
 .section-header h2 {
@@ -669,6 +701,125 @@ section {
 .about-panel:hover .about-panel-tags span {
   border-color: var(--gold-dim);
   color: var(--cream);
+}
+
+/* Education block */
+.about-education {
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 2.5rem 3rem;
+  background: var(--bg-3);
+  margin-bottom: 1px;
+}
+
+.about-education > .about-panel-label {
+  margin-bottom: 1.5rem;
+}
+
+.edu-items {
+  display: flex;
+  gap: 0;
+}
+
+.edu-item {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.edu-divider {
+  width: 1px;
+  background: var(--border);
+  margin: 0 3rem;
+  align-self: stretch;
+}
+
+.edu-years {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.edu-school {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 0.3rem;
+}
+
+.edu-degree {
+  font-size: 0.82rem;
+  color: var(--cream-dim);
+  margin-bottom: 0.2rem;
+}
+
+.edu-sub {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  opacity: 0.5;
+}
+
+.work-education {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  margin-bottom: 4rem;
+  background: var(--bg-3);
+}
+
+.work-edu-item {
+  flex: 1;
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.work-edu-divider {
+  width: 1px;
+  align-self: stretch;
+  background: var(--border);
+}
+
+.work-edu-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.work-edu-school {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--cream);
+}
+
+.work-edu-degree {
+  font-size: 0.75rem;
+  color: var(--cream-dim);
+  line-height: 1.5;
+}
+
+.overview-card-stage {
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  opacity: 0.5;
+  margin-bottom: -0.25rem;
+}
+
+@media (max-width: 700px) {
+  .edu-items { flex-direction: column; }
+  .edu-divider { width: 100%; height: 1px; margin: 1.5rem 0; }
+  .work-education { flex-direction: column; }
+  .work-edu-divider { width: 100%; height: 1px; }
 }
 
 .about-meta-row {
