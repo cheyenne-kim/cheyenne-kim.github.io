@@ -908,6 +908,11 @@ section {
   border-color: var(--gold-dim);
 }
 
+.selected-type--web {
+  color: #6bba7f;
+  border-color: rgba(107, 186, 127, 0.3);
+}
+
 .selected-title {
   font-family: var(--font-serif);
   font-size: clamp(1.3rem, 2.5vw, 1.9rem);
